@@ -5,8 +5,8 @@ import "fmt"
 
 
 func main() {
-    
-    
+
+
 var OS int
 var Ayo string
 var learner bool
@@ -18,7 +18,7 @@ month := "June"
 today := true
 
 
-    
+
 fmt.Println(OS)
 fmt.Println(Ayo)
 fmt.Println(learner)
