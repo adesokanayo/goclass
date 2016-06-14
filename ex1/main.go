@@ -7,9 +7,9 @@ import "fmt"
 func main() {
 
 
-var OS int
-var Ayo string
-var learner bool
+os:=8
+student:="Ayo" 
+learner:= true
 
 
 
@@ -19,15 +19,11 @@ today := true
 
 
 
-fmt.Println(OS)
-fmt.Println(Ayo)
-fmt.Println(learner)
-
-
-newvar:= float32(3.14)
+newvar:= 3.14
 
 
 fmt.Printf( "This month is  %s in the year %d and it is %t\n" , month, year, today )
-fmt.Printf("New Variable is %v", newvar)
+fmt.Printf("New Variable is %v\n", newvar)
+fmt.Printf("It is %t!, %s uses windows %d",  learner, student,os )
 
 }
