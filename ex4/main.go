@@ -5,29 +5,29 @@ import "fmt"
 func main(){
  type name struct{
         
-       name string
+       fname string
        age int
          }
     
     myguy:=name{
-        name:"Nameless",
+        fname:"Nameless",
         age: 25,
     }
 
 
 // value before 
 
-fmt.Printf("Name Before :%s\n",myguy.name)
+fmt.Printf("FName Before :%s\n",myguy.fname)
 //value after
-fmt.Printf("Name After: %s\n",changename(myguy.name))
+fmt.Printf("FName After: %s\n",changename(myguy.fname))
     
 }
 
 // function to change the name by concatenating ab 
     
-   func changename( name string)string{
+   func changename( fname string)string{
        
-       return name+"ab"
+       return fname+"ab"
    }
 
 
