@@ -1,5 +1,7 @@
 package main
 
+// still struggling to understand interface , but am reading it.
+//i had to look up the answer.
 import "fmt"
 
 type speaker interface {
