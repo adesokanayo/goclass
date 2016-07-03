@@ -2,25 +2,27 @@ package toy
 
 // Toy is exported type
 type Toy struct {
-   Name string
-   Weight int
-	onhand int
+	Name   string
+	Weight int
+	onHand int
 	sold   int
 }
 
-func New(name string, weight int) (*Toy) {
+//New was exported
+func New(name string, weight int) *Toy {
 	return &Toy{
-        Name: name,
-        Weight: weight,
-    }
+		Name:   name,
+		Weight: weight,
+	}
 }
 
-
-
+//OnHand is exporetd
 func (t *Toy) OnHand() int {
 	return t.onHand
 }
-//copied from answers , not too clear, so I had to read 
+
+//copied from answers , not too clear, so I had to read
+
 // UpdateOnHand updates the on hand count and
 // returns the current value.
 func (t *Toy) UpdateOnHand(count int) int {
