@@ -17,12 +17,12 @@ type sport struct {
 }
 
 // match checks the value for the specified term.
+
+//  hockey struct  that embed sport type
+
 func (s sport) match(searchTerm string) bool {
 	return strings.Contains(s.team, searchTerm) || strings.Contains(s.city, searchTerm)
 }
-
-// Declare a struct type named hockey that represents specific
-// hockey information. Have it embed the sport type first.
 
 type hockey struct {
 	sport
@@ -34,33 +34,30 @@ func (h hockey) match(searchTerm string) bool {
 
 	return h.sport.match(searchTerm) || strings.Contains(h.grade, searchTerm)
 
-	// Make sure you call into match method for the embedded sport type.
-
 }
+
+// Define the term to match.
+
+//IDEA: converted the search item  to lowercase
+// Create a slice of matcher values and display matching
 
 func main() {
 
-	// Define the term to match.
-	searchTerm := "bombers"
+	search := "Bombers"
+	searchTerm := strings.ToLower(search)
 
 	data := []matcher{
 		hockey{sport{"bombers", "lagos"}, "one"},
 		hockey{sport{"Slayers", "Ibadan"}, "two"},
 	}
-	// Create a slice of matcher values and assign values
-	// of the concrete hockey type.
 
 	fmt.Println("looking for :", searchTerm)
-
-	// Display what we are trying to match.
 
 	for _, m := range data {
 		if m.match(searchTerm) {
 			fmt.Printf("%s is present", m)
 		}
-		//return err
 
 	}
 
-	// Range of each matcher value and check the term.
 }

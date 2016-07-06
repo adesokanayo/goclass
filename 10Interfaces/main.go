@@ -32,8 +32,8 @@ func main() {
 	sp = c
 	sp.speak()
 
-	greet(new(english))
-	greet(new(chinese))
+	greet(e)
+	greet(c)
 
 }
 
