@@ -18,6 +18,7 @@ func main(){
 // value before 
 
 fmt.Printf("FName Before :%s\n",myguy.fname)
+
 //value after
 fmt.Printf("FName After: %s\n",changename(myguy.fname))
     
