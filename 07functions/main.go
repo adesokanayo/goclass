@@ -26,10 +26,10 @@ func main() {
 	}
 
 	fmt.Println(newsignup)
-    
-    //to test for the errors, I dont understand why he used equals = and not :=
 
-	_, err= createuser()
+	//to test for the errors, I dont understand why he used equals = and not :=
+
+	_, err = createuser()
 	if err != nil {
 		fmt.Println(err)
 	}
